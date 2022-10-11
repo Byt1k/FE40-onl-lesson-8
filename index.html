@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/zeroing.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <section class="order">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="#">Главная</a>
+                <a href="#">Корзина</a>
+                <a href="#">Оформление заказа</a>
+            </div>
+            <form class="order__form">
+                <div class="left">
+                    <fieldset>
+                        <legend>Способ получения</legend>
+                        <input type="text" placeholder="Город" class="order__form__city">
+                        <div class="select">
+                            <p>Почта России</p>
+                        </div>
+                        <div class="order__form__address">
+                            <input type="text" placeholder="Улица">
+                            <input type="text" placeholder="Дом">
+                            <input type="text" placeholder="Квартира">
+                            <input type="text" placeholder="Индекс">
+                        </div>
+                        <textarea rows="1" placeholder="Добавить комментарий"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Данные получателя</legend>
+                        <div class="order__form__client">
+                            <input type="text" placeholder="Фамилия">
+                            <input type="text" placeholder="Имя">
+                            <input type="text" placeholder="Отчество">
+                            <input type="tel" placeholder="Номер телефона">
+                            <p>По этому номеру телефона мы с вяжемся с вами для подтверждения заказа</p>
+                        </div>
+                        <input type="email" id="email" placeholder="E-mail">
+                        <label for="email">На эту почту вам придет письмо с составом заказа, а так же трэк-номер для его отслеживания</label>
+                        <label class="checkbox">
+                            <input type="checkbox" id="check-news">
+                            <label for="check-news">
+                                <img src="img/check.svg" alt="check">
+                            </label>
+                            Подписаться на рассылку новинок и акций
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Способ оплаты</legend>
+                        <label class="radio-btn">
+                            <input type="radio" name="pay">
+                            Оплата при получении наличными или картой
+                        </label>
+                        <label class="radio-btn">
+                            <input type="radio" name="pay" checked>
+                            Оплата банковской картой онлайн
+                        </label>
+                    </fieldset>
+                </div>
+                <div class="right">
+                    <fieldset>
+                        <legend>Промокод</legend>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
